@@ -47,8 +47,7 @@ function renderHome() {
         <div class="hero-art"><img src="${asset(profile.heroImage)}" alt="${e(profile.heroAlt)}" fetchpriority="high" width="1920" height="1080" /></div>
         <div class="hero-shade"></div>
         <div class="hero-content page-width">
-          <p class="hero-role">${e(profile.role)}</p>
-          <h1 id="hero-title">${profile.headline.map(line => `<span>${e(line)}</span>`).join('')}</h1>
+          <h1 id="hero-title">${e(profile.role)}</h1>
           <a class="hero-link" href="#work">View work <span aria-hidden="true">↓</span></a>
         </div>
       </section>
@@ -271,7 +270,7 @@ async function init() {
     const response = await fetch(new URL('portfolio.json', base));
     if (!response.ok) throw new Error(`Unable to load portfolio.json (${response.status})`);
     data = await response.json() as Portfolio;
-    if (!data.profile?.name || !data.projects?.length || !Array.isArray(data.profile.headline)) throw new Error('portfolio.json: profile and projects are required.');
+    if (!data.profile?.name || !data.profile.role || !data.projects?.length) throw new Error('portfolio.json: profile and projects are required.');
     const ids = new Set<string>();
     for (const project of data.projects) {
       if (!/^[a-z0-9-]+$/.test(project.id) || ids.has(project.id) || !Array.isArray(project.media)) throw new Error(`Invalid or duplicate project: ${project.id}`);

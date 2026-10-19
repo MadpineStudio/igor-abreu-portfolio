@@ -15,7 +15,6 @@
       "required": [
         "name",
         "role",
-        "headline",
         "heroImage",
         "heroAlt",
         "email",
@@ -28,14 +27,6 @@
         },
         "role": {
           "type": "string"
-        },
-        "headline": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "minItems": 1,
-          "maxItems": 3
         },
         "heroImage": {
           "type": "string",

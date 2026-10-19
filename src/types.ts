@@ -29,7 +29,6 @@ export interface Portfolio {
   profile: {
     name: string;
     role: string;
-    headline: string[];
     heroImage: string;
     heroAlt: string;
     email: string;

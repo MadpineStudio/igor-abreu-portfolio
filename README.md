@@ -17,7 +17,7 @@ Open http://127.0.0.1:5173/.
 
 Edit `public/portfolio.json`. The accompanying JSON schema provides editor suggestions.
 
-- `profile`: name, role, headline, hero image, email and social links. Empty contact fields are hidden.
+- `profile`: name, role, hero image, email and social links. The role is used for the main cover heading and page title. Empty contact fields are hidden.
 - `projects`: project titles, categories, descriptions, tools, covers and media.
 - `projects[].media`: videos and images in display order. Keep IDs stable to preserve shared links.
 - Media paths are relative to `public/`, with no leading slash.
