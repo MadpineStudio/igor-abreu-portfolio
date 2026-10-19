@@ -3,15 +3,519 @@
   "profile": {
     "name": "Igor Abreu",
     "role": "Game Developer | Rigging",
-    "heroImage": "media/thumb.png",
-    "heroAlt": "A stylized character in a T-pose beneath a blue sky and moon.",
+    "heroImage": "media/images/flowerlake-showcase/hero/2026-05-06-234213.webp",
+    "heroAlt": "The character in a forest clearing with glowing markers.",
     "email": "",
-    "socials": []
+    "socials": [],
+    "heroImages": [
+      {
+        "src": "media/images/flowerlake-showcase/hero/2026-05-06-234213.webp",
+        "alt": "The character in a forest clearing with glowing markers."
+      },
+      {
+        "src": "media/images/flowerlake-showcase/hero/2026-05-07-111303.webp",
+        "alt": "An elevated view of the forest paths and architecture."
+      },
+      {
+        "src": "media/images/flowerlake-showcase/hero/2026-04-28-003808.webp",
+        "alt": "Tall trees and foliage in blue-green atmospheric light."
+      },
+      {
+        "src": "media/images/flowerlake-showcase/hero/2026-04-28-003723.webp",
+        "alt": "A path through the forest toward a small building."
+      },
+      {
+        "src": "media/images/flowerlake-showcase/hero/2026-03-17-010432.webp",
+        "alt": "Colored roof and leaf details on the flower house."
+      },
+      {
+        "src": "media/images/flowerlake-showcase/hero/2026-03-13-203746.webp",
+        "alt": "A flower-shaped house beside the character."
+      }
+    ]
   },
   "projects": [
     {
-      "id": "the-flower-castle",
+      "id": "flowerlake-showcase",
       "number": "01",
+      "title": "Flowerlake Showcase",
+      "subtitle": "Environment and game development",
+      "category": "Game Development",
+      "year": "2026",
+      "cover": "media/images/flowerlake-showcase/previews/2026-05-06-234213.webp",
+      "coverAlt": "The character in a forest clearing with glowing markers.",
+      "description": "Environment development for Flowerlake: architecture, materials, lighting and in-engine scene studies.",
+      "tools": [
+        "Blender",
+        "Unity"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "still-2026-05-06-234213",
+          "type": "image",
+          "title": "Forest clearing",
+          "caption": "The character in a forest clearing with glowing markers.",
+          "src": "media/images/flowerlake-showcase/2026-05-06-234213.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-05-06-234213.webp",
+          "alt": "The character in a forest clearing with glowing markers.",
+          "aspect": "wide"
+        },
+        {
+          "id": "still-2026-05-07-111303",
+          "type": "image",
+          "title": "Environment overview",
+          "caption": "An elevated view of the forest paths and architecture.",
+          "src": "media/images/flowerlake-showcase/2026-05-07-111303.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-05-07-111303.webp",
+          "alt": "An elevated view of the forest paths and architecture.",
+          "aspect": "wide"
+        },
+        {
+          "id": "still-2026-04-28-003808",
+          "type": "image",
+          "title": "Forest atmosphere",
+          "caption": "Tall trees and foliage in blue-green atmospheric light.",
+          "src": "media/images/flowerlake-showcase/2026-04-28-003808.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-28-003808.webp",
+          "alt": "Tall trees and foliage in blue-green atmospheric light.",
+          "aspect": "wide"
+        },
+        {
+          "id": "still-2026-04-28-003723",
+          "type": "image",
+          "title": "Forest path",
+          "caption": "A path through the forest toward a small building.",
+          "src": "media/images/flowerlake-showcase/2026-04-28-003723.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-28-003723.webp",
+          "alt": "A path through the forest toward a small building.",
+          "aspect": "wide"
+        },
+        {
+          "id": "still-2026-03-17-010432",
+          "type": "image",
+          "title": "Flower house materials",
+          "caption": "Colored roof and leaf details on the flower house.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-010432.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-010432.webp",
+          "alt": "Colored roof and leaf details on the flower house.",
+          "aspect": "wide"
+        },
+        {
+          "id": "still-2026-03-13-203746",
+          "type": "image",
+          "title": "Flower house",
+          "caption": "A flower-shaped house beside the character.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-203746.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-203746.webp",
+          "alt": "A flower-shaped house beside the character.",
+          "aspect": "wide"
+        },
+        {
+          "id": "still-2026-05-07-222725",
+          "type": "image",
+          "title": "Gameplay showcase",
+          "caption": "The forest environment with its gameplay interface.",
+          "src": "media/images/flowerlake-showcase/2026-05-07-222725.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-05-07-222725.webp",
+          "alt": "The forest environment with its gameplay interface.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-13-130811",
+          "type": "image",
+          "title": "Sunlight test",
+          "caption": "Character and grass lighting under a bright sky.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-130811.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-130811.webp",
+          "alt": "Character and grass lighting under a bright sky.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-13-130900",
+          "type": "image",
+          "title": "Waterway",
+          "caption": "Water between raised sections of the environment.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-130900.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-130900.webp",
+          "alt": "Water between raised sections of the environment.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-13-131002",
+          "type": "image",
+          "title": "Water and reflections",
+          "caption": "Character above the water during an environment test.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-131002.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-131002.webp",
+          "alt": "Character above the water during an environment test.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-13-205841",
+          "type": "image",
+          "title": "Flower house blockout",
+          "caption": "Untextured flower house model.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-205841.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-205841.webp",
+          "alt": "Untextured flower house model.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-03-13-205901",
+          "type": "image",
+          "title": "House views",
+          "caption": "Multiple views of the house model in Blender.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-205901.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-205901.webp",
+          "alt": "Multiple views of the house model in Blender.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-13-225505",
+          "type": "image",
+          "title": "Village layout",
+          "caption": "House placement between the large tree trunks.",
+          "src": "media/images/flowerlake-showcase/2026-03-13-225505.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-13-225505.webp",
+          "alt": "House placement between the large tree trunks.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-14-202848",
+          "type": "image",
+          "title": "Tower house",
+          "caption": "A tall house with a pointed roof in the environment.",
+          "src": "media/images/flowerlake-showcase/2026-03-14-202848.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-14-202848.webp",
+          "alt": "A tall house with a pointed roof in the environment.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-14-203404",
+          "type": "image",
+          "title": "Roof silhouette",
+          "caption": "House roof and character scale in the scene.",
+          "src": "media/images/flowerlake-showcase/2026-03-14-203404.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-14-203404.webp",
+          "alt": "House roof and character scale in the scene.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-14-203431",
+          "type": "image",
+          "title": "Canopy house",
+          "caption": "An open canopy roof overlooking the water.",
+          "src": "media/images/flowerlake-showcase/2026-03-14-203431.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-14-203431.webp",
+          "alt": "An open canopy roof overlooking the water.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-14-221804",
+          "type": "image",
+          "title": "Spiral roof",
+          "caption": "A house with a layered spiral roof.",
+          "src": "media/images/flowerlake-showcase/2026-03-14-221804.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-14-221804.webp",
+          "alt": "A house with a layered spiral roof.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-15-200545",
+          "type": "image",
+          "title": "Architecture sketches",
+          "caption": "Concept sketches for the village architecture.",
+          "src": "media/images/flowerlake-showcase/2026-03-15-200545.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-15-200545.webp",
+          "alt": "Concept sketches for the village architecture.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-15-200606",
+          "type": "image",
+          "title": "Spiral house blockout",
+          "caption": "Untextured model of the spiral-roof house.",
+          "src": "media/images/flowerlake-showcase/2026-03-15-200606.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-15-200606.webp",
+          "alt": "Untextured model of the spiral-roof house.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-15-200616",
+          "type": "image",
+          "title": "Doorway study",
+          "caption": "Doorway and roof proportions on the house model.",
+          "src": "media/images/flowerlake-showcase/2026-03-15-200616.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-15-200616.webp",
+          "alt": "Doorway and roof proportions on the house model.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-15-200627",
+          "type": "image",
+          "title": "Flower house front",
+          "caption": "Front view of the flower house model.",
+          "src": "media/images/flowerlake-showcase/2026-03-15-200627.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-15-200627.webp",
+          "alt": "Front view of the flower house model.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-15-200634",
+          "type": "image",
+          "title": "Entrance detail",
+          "caption": "House entrance and steps during modeling.",
+          "src": "media/images/flowerlake-showcase/2026-03-15-200634.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-15-200634.webp",
+          "alt": "House entrance and steps during modeling.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-17-005110",
+          "type": "image",
+          "title": "Roof structure",
+          "caption": "Canopy structure and house silhouette.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-005110.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-005110.webp",
+          "alt": "Canopy structure and house silhouette.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-17-005120",
+          "type": "image",
+          "title": "House silhouette",
+          "caption": "A simplified view of the flower house.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-005120.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-005120.webp",
+          "alt": "A simplified view of the flower house.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-17-191813",
+          "type": "image",
+          "title": "Tower geometry",
+          "caption": "Close-up of the tower geometry.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-191813.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-191813.webp",
+          "alt": "Close-up of the tower geometry.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-03-17-191817",
+          "type": "image",
+          "title": "Tower colors",
+          "caption": "Color study for the tall village house.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-191817.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-191817.webp",
+          "alt": "Color study for the tall village house.",
+          "aspect": "portrait"
+        },
+        {
+          "id": "still-2026-03-17-191821",
+          "type": "image",
+          "title": "Tower proportions",
+          "caption": "Roof and wall proportions on the tower model.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-191821.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-191821.webp",
+          "alt": "Roof and wall proportions on the tower model.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-03-17-191827",
+          "type": "image",
+          "title": "Tower facade",
+          "caption": "Front view of the tower with its colored materials.",
+          "src": "media/images/flowerlake-showcase/2026-03-17-191827.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-17-191827.webp",
+          "alt": "Front view of the tower with its colored materials.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-03-19-200743",
+          "type": "image",
+          "title": "Tower in scene",
+          "caption": "The tower house placed in the game environment.",
+          "src": "media/images/flowerlake-showcase/2026-03-19-200743.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-19-200743.webp",
+          "alt": "The tower house placed in the game environment.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-19-234843",
+          "type": "image",
+          "title": "Village composition",
+          "caption": "Several village houses arranged between the trees.",
+          "src": "media/images/flowerlake-showcase/2026-03-19-234843.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-19-234843.webp",
+          "alt": "Several village houses arranged between the trees.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-19-235657",
+          "type": "image",
+          "title": "Roof tiles",
+          "caption": "A close-up of the colored roof tile material.",
+          "src": "media/images/flowerlake-showcase/2026-03-19-235657.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-19-235657.webp",
+          "alt": "A close-up of the colored roof tile material.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-03-20-224753",
+          "type": "image",
+          "title": "Wall material",
+          "caption": "Wall surface and color detail.",
+          "src": "media/images/flowerlake-showcase/2026-03-20-224753.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-20-224753.webp",
+          "alt": "Wall surface and color detail.",
+          "aspect": "portrait"
+        },
+        {
+          "id": "still-2026-03-20-224800",
+          "type": "image",
+          "title": "Material preview",
+          "caption": "House material study and color samples.",
+          "src": "media/images/flowerlake-showcase/2026-03-20-224800.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-20-224800.webp",
+          "alt": "House material study and color samples.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-03-20-224810",
+          "type": "image",
+          "title": "Material workflow",
+          "caption": "Material setup shown in the authoring workspace.",
+          "src": "media/images/flowerlake-showcase/2026-03-20-224810.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-20-224810.webp",
+          "alt": "Material setup shown in the authoring workspace.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-21-001439",
+          "type": "image",
+          "title": "Village close-up",
+          "caption": "Textured village architecture beside the character.",
+          "src": "media/images/flowerlake-showcase/2026-03-21-001439.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-21-001439.webp",
+          "alt": "Textured village architecture beside the character.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-21-001506",
+          "type": "image",
+          "title": "House scale",
+          "caption": "Character scale against a village house.",
+          "src": "media/images/flowerlake-showcase/2026-03-21-001506.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-21-001506.webp",
+          "alt": "Character scale against a village house.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-28-233535",
+          "type": "image",
+          "title": "Character rig preview",
+          "caption": "Character rig controls shown in the editor.",
+          "src": "media/images/flowerlake-showcase/2026-03-28-233535.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-28-233535.webp",
+          "alt": "Character rig controls shown in the editor.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-03-31-215701",
+          "type": "image",
+          "title": "Character concept",
+          "caption": "A stylized character illustration.",
+          "src": "media/images/flowerlake-showcase/2026-03-31-215701.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-03-31-215701.webp",
+          "alt": "A stylized character illustration.",
+          "aspect": "square"
+        },
+        {
+          "id": "still-2026-04-27-184625",
+          "type": "image",
+          "title": "Forest creature",
+          "caption": "A creature with branch-like antlers in the forest.",
+          "src": "media/images/flowerlake-showcase/2026-04-27-184625.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-27-184625.webp",
+          "alt": "A creature with branch-like antlers in the forest.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-28-003757",
+          "type": "image",
+          "title": "Canopy lighting",
+          "caption": "Light filtering through the forest canopy.",
+          "src": "media/images/flowerlake-showcase/2026-04-28-003757.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-28-003757.webp",
+          "alt": "Light filtering through the forest canopy.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-29-051310",
+          "type": "image",
+          "title": "Environment blockout",
+          "caption": "Tree placement and terrain in the forest scene.",
+          "src": "media/images/flowerlake-showcase/2026-04-29-051310.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-29-051310.webp",
+          "alt": "Tree placement and terrain in the forest scene.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-29-051313",
+          "type": "image",
+          "title": "Scene assembly",
+          "caption": "A wide view of the assembled forest environment.",
+          "src": "media/images/flowerlake-showcase/2026-04-29-051313.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-29-051313.webp",
+          "alt": "A wide view of the assembled forest environment.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-29-073516",
+          "type": "image",
+          "title": "Grass study",
+          "caption": "Grass placement and surface coverage in the scene.",
+          "src": "media/images/flowerlake-showcase/2026-04-29-073516.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-04-29-073516.webp",
+          "alt": "Grass placement and surface coverage in the scene.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-05-06-150610",
+          "type": "image",
+          "title": "Forest gameplay view",
+          "caption": "Character and glowing markers in the forest.",
+          "src": "media/images/flowerlake-showcase/2026-05-06-150610.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-05-06-150610.webp",
+          "alt": "Character and glowing markers in the forest.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-05-07-001155",
+          "type": "image",
+          "title": "Scene lighting",
+          "caption": "Trees, ground cover and glowing markers in the clearing.",
+          "src": "media/images/flowerlake-showcase/2026-05-07-001155.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-05-07-001155.webp",
+          "alt": "Trees, ground cover and glowing markers in the clearing.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-05-07-111042",
+          "type": "image",
+          "title": "Canopy and sunlight",
+          "caption": "Character under the tree canopy with shafts of sunlight.",
+          "src": "media/images/flowerlake-showcase/2026-05-07-111042.webp",
+          "poster": "media/images/flowerlake-showcase/previews/2026-05-07-111042.webp",
+          "alt": "Character under the tree canopy with shafts of sunlight.",
+          "aspect": "landscape"
+        }
+      ]
+    },
+    {
+      "id": "the-flower-castle",
+      "number": "02",
       "title": "The Flower Castle",
       "subtitle": "Character animation in Unity",
       "category": "Animation",
@@ -88,14 +592,14 @@
     },
     {
       "id": "character-rigs",
-      "number": "02",
+      "number": "03",
       "title": "Character Rigs",
       "subtitle": "Facial and creature animation",
       "category": "Rigging",
       "year": "2026",
-      "cover": "media/posters/2026-04-04-17-49-28.webp",
-      "coverAlt": "A stylized character during a facial expression test.",
-      "description": "Facial expressions, creature rigs and quadruped animation. Tests in Blender and Unity.",
+      "cover": "media/images/character-rigs/previews/2026-04-04-155932.webp",
+      "coverAlt": "A closer view of the textured character model.",
+      "description": "Character modeling, facial expressions, creature rigs and quadruped animation. Development images and tests in Blender and Unity.",
       "tools": [
         "Blender",
         "Unity"
@@ -181,12 +685,62 @@
           "poster": "media/posters/2026-04-16-02-41-42.webp",
           "alt": "Still from the creature animation study in Blender.",
           "aspect": "square"
+        },
+        {
+          "id": "still-2026-04-03-190425",
+          "type": "image",
+          "title": "Character base",
+          "caption": "A stylized character in a T-pose against a gradient sky.",
+          "src": "media/images/character-rigs/2026-04-03-190425.webp",
+          "poster": "media/images/character-rigs/previews/2026-04-03-190425.webp",
+          "alt": "A stylized character in a T-pose against a gradient sky.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-03-190650",
+          "type": "image",
+          "title": "Unity setup",
+          "caption": "Character model and scene setup in the Unity editor.",
+          "src": "media/images/character-rigs/2026-04-03-190650.webp",
+          "poster": "media/images/character-rigs/previews/2026-04-03-190650.webp",
+          "alt": "Character model and scene setup in the Unity editor.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-04-153905",
+          "type": "image",
+          "title": "Character model",
+          "caption": "An untextured character model shown in a T-pose.",
+          "src": "media/images/character-rigs/2026-04-04-153905.webp",
+          "poster": "media/images/character-rigs/previews/2026-04-04-153905.webp",
+          "alt": "An untextured character model shown in a T-pose.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-04-155924",
+          "type": "image",
+          "title": "In-engine character",
+          "caption": "Textured character with chest armor in the engine.",
+          "src": "media/images/character-rigs/2026-04-04-155924.webp",
+          "poster": "media/images/character-rigs/previews/2026-04-04-155924.webp",
+          "alt": "Textured character with chest armor in the engine.",
+          "aspect": "landscape"
+        },
+        {
+          "id": "still-2026-04-04-155932",
+          "type": "image",
+          "title": "Character detail",
+          "caption": "A closer view of the textured character model.",
+          "src": "media/images/character-rigs/2026-04-04-155932.webp",
+          "poster": "media/images/character-rigs/previews/2026-04-04-155932.webp",
+          "alt": "A closer view of the textured character model.",
+          "aspect": "landscape"
         }
       ]
     },
     {
       "id": "tech-art-studies",
-      "number": "03",
+      "number": "04",
       "title": "Tech Art Studies",
       "subtitle": "Materials and real-time effects",
       "category": "Technical Art",

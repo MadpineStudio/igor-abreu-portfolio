@@ -3,6 +3,7 @@ import type { Media, Portfolio, Project } from './types';
 import { readRoute, routeUrl } from './routing';
 import { escapeHtml as e, mediaLabel, safeUrl } from './utils';
 import { initMotion } from './motion';
+import { initHeroCarousel } from './hero';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const projectDialog = document.querySelector<HTMLDialogElement>('#project-dialog')!;
@@ -32,6 +33,7 @@ function stats(project: Project) {
 
 function renderHome() {
   const { profile, projects } = data;
+  const heroImages = profile.heroImages?.length ? profile.heroImages : [{ src: profile.heroImage, alt: profile.heroAlt }];
   const categories = [...new Set(projects.map(project => project.category))];
   document.title = `${profile.name} — ${profile.role}`;
   app.innerHTML = `
@@ -44,11 +46,14 @@ function renderHome() {
     </header>
     <main>
       <section id="home" class="hero" aria-labelledby="hero-title">
-        <div class="hero-art"><img src="${asset(profile.heroImage)}" alt="${e(profile.heroAlt)}" fetchpriority="high" width="1920" height="1080" /></div>
+        <div class="hero-art"><img class="hero-image" src="${asset(heroImages[0].src)}" alt="${e(heroImages[0].alt)}" fetchpriority="high" width="1920" height="1080" /></div>
         <div class="hero-shade"></div>
         <div class="hero-content page-width">
           <h1 id="hero-title">${e(profile.role)}</h1>
-          <a class="hero-link" href="#work">View work <span aria-hidden="true">↓</span></a>
+          <div class="hero-actions">
+            <a class="hero-link" href="#work">View work <span aria-hidden="true">↓</span></a>
+            ${heroImages.length > 1 ? `<div class="hero-controls" role="group" aria-label="Background images"><button type="button" data-hero-previous aria-label="Previous background"><span aria-hidden="true">←</span></button><span data-hero-position aria-live="polite" aria-atomic="true">01 / ${String(heroImages.length).padStart(2, '0')}</span><button type="button" data-hero-next aria-label="Next background"><span aria-hidden="true">→</span></button></div>` : ''}
+          </div>
         </div>
       </section>
       <section id="work" class="work page-width" aria-labelledby="work-title">
@@ -76,6 +81,7 @@ function renderHome() {
     </footer>`;
   app.setAttribute('aria-busy', 'false');
   initMotion();
+  initHeroCarousel(heroImages, base, () => toast('Unable to load this background. Try again.'));
 }
 
 function renderProject(project: Project) {
@@ -96,7 +102,7 @@ function renderProject(project: Project) {
 }
 
 function mediaCard(project: Project, media: Media, index: number): string {
-  const thumb = media.type === 'image' ? media.src || media.poster : media.poster;
+  const thumb = media.type === 'image' ? media.poster || media.src : media.poster;
   return `<a class="media-card media-${e(media.aspect ?? (index === 0 ? 'wide' : 'square'))}" href="${e(routeUrl(location.href, { project: project.id, media: media.id }).href)}" data-media="${e(media.id)}" data-media-type="${media.type}" aria-label="Open ${e(media.title)}${media.type === 'video' ? ', video' : ', image'}">
     <div class="media-thumb"><img src="${asset(thumb)}" alt="${e(media.alt)}" width="1200" height="950" loading="lazy" />${media.type === 'video' ? '<span class="play-button" aria-hidden="true"><span></span></span>' : '<span class="expand-button" aria-hidden="true">↗</span>'}${!media.src ? '<span class="placeholder-label">Placeholder</span>' : ''}<span class="media-kind">${media.type === 'video' ? 'Video' : 'Image'}</span></div>
     <div class="media-card-caption"><h4>${e(media.title)}</h4></div></a>`;

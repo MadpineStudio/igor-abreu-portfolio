@@ -9,6 +9,7 @@
     "preview": "vite preview --host 127.0.0.1",
     "check": "tsc --noEmit",
     "media:optimize": "node scripts/optimize-media.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs",
     "pretest": "npm run build",
     "test": "node --experimental-strip-types --test tests/*.test.*"
   },

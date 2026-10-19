@@ -6,7 +6,7 @@ export interface Media {
   src: string;
   poster: string;
   alt: string;
-  aspect?: 'wide' | 'square' | 'portrait';
+  aspect?: 'wide' | 'square' | 'portrait' | 'landscape';
   tracks?: { src: string; label: string; language: string }[];
 }
 
@@ -25,12 +25,18 @@ export interface Project {
   media: Media[];
 }
 
+export interface HeroImage {
+  src: string;
+  alt: string;
+}
+
 export interface Portfolio {
   profile: {
     name: string;
     role: string;
     heroImage: string;
     heroAlt: string;
+    heroImages?: HeroImage[];
     email: string;
     socials: { label: string; url: string }[];
   };

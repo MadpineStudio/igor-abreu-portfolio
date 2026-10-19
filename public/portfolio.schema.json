@@ -35,6 +35,18 @@
         "heroAlt": {
           "type": "string"
         },
+        "heroImages": {
+          "type": "array",
+          "description": "Home backgrounds in display order. Visitors switch images with the arrow buttons.",
+          "items": {
+            "type": "object",
+            "required": ["src", "alt"],
+            "properties": {
+              "src": { "type": "string" },
+              "alt": { "type": "string" }
+            }
+          }
+        },
         "email": {
           "type": "string",
           "description": "Leave empty to hide the contact link."
@@ -172,7 +184,8 @@
           "enum": [
             "wide",
             "square",
-            "portrait"
+            "portrait",
+            "landscape"
           ]
         },
         "tracks": {

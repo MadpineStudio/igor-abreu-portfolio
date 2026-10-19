@@ -8,6 +8,7 @@ const sourceRoot = fileURLToPath(new URL('../public/', import.meta.url));
 const outputRoot = fileURLToPath(new URL('../dist/', import.meta.url));
 const content = JSON.parse(await readFile(resolve(sourceRoot, 'portfolio.json'), 'utf8'));
 const selected = new Set(['portfolio.json', 'portfolio.schema.json', 'favicon.svg', 'manrope-license.txt', content.profile.heroImage, 'media/placeholders/atlas.svg']);
+for (const image of content.profile.heroImages ?? []) selected.add(image.src);
 for (const project of content.projects) {
   selected.add(project.cover);
   for (const media of project.media) {

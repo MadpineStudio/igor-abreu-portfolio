@@ -125,3 +125,71 @@ test('additional photos render without changing source code and titles are escap
     assert.deepEqual(page.errors, []);
   } finally { page.close(); }
 });
+
+function withBackgrounds() {
+  const custom = structuredClone(catalog);
+  custom.profile.heroImages = ['atlas', 'kinetic', 'orbit'].map(name => ({ src: `media/placeholders/${name}.svg`, alt: `${name} background` }));
+  return custom;
+}
+
+test('home backgrounds load on demand and wrap with buttons and arrow keys', async () => {
+  const page = await boot('', withBackgrounds());
+  try {
+    const { document: doc, window } = page;
+    const requested = [];
+    window.HTMLImageElement.prototype.decode = async function() { requested.push(this.src); };
+    assert.equal(doc.querySelectorAll('.hero-art img').length, 1);
+    assert.equal(requested.length, 0);
+    doc.querySelector('[data-hero-next]').click();
+    await tick();
+    assert.equal(doc.querySelector('[data-hero-position]').textContent, '02 / 03');
+    assert.equal(doc.querySelector('.hero-art img:last-child').src, 'http://localhost:5173/portfolio/media/placeholders/kinetic.svg');
+    doc.querySelector('[data-hero-next]').dispatchEvent(new window.KeyboardEvent('keydown', { key: 'ArrowLeft', bubbles: true }));
+    await tick();
+    assert.equal(doc.querySelector('[data-hero-position]').textContent, '01 / 03');
+    doc.querySelector('[data-hero-previous]').click();
+    await tick();
+    assert.equal(doc.querySelector('[data-hero-position]').textContent, '03 / 03');
+    assert.equal(window.location.search, '', 'changing the background does not affect project links');
+    assert.deepEqual(page.errors, []);
+  } finally { page.close(); }
+});
+
+test('the latest background request wins and a failed image leaves the current background visible', async () => {
+  const page = await boot('', withBackgrounds());
+  try {
+    const { document: doc, window } = page;
+    const pending = [];
+    window.HTMLImageElement.prototype.decode = function() {
+      return new Promise((resolve, reject) => pending.push({ resolve, reject }));
+    };
+    doc.querySelector('[data-hero-next]').click();
+    doc.querySelector('[data-hero-next]').click();
+    pending[1].resolve();
+    await tick();
+    pending[0].resolve();
+    await tick();
+    assert.equal(doc.querySelector('[data-hero-position]').textContent, '03 / 03');
+    assert.ok(doc.querySelector('.hero-art img:last-child').src.endsWith('/orbit.svg'));
+    doc.querySelector('[data-hero-next]').click();
+    pending[2].reject(new Error('Unavailable image'));
+    await tick();
+    assert.equal(doc.querySelector('[data-hero-position]').textContent, '03 / 03');
+    assert.ok(doc.querySelector('.hero-art img:last-child').src.endsWith('/orbit.svg'));
+    assert.ok(!doc.querySelector('.hero-controls').hasAttribute('aria-busy'));
+    assert.match(doc.querySelector('#toast').textContent, /Unable to load/);
+    assert.deepEqual(page.errors, []);
+  } finally { page.close(); }
+});
+
+test('image galleries use small previews and open the full-resolution image in the viewer', async () => {
+  const custom = structuredClone(catalog);
+  custom.projects[0].media[1].src = 'media/full-resolution.webp';
+  custom.projects[0].media[1].poster = 'media/preview.webp';
+  const page = await boot('?project=atlas', custom);
+  try {
+    assert.ok(page.document.querySelector('[data-media="poses"] img').src.endsWith('/media/preview.webp'));
+    page.document.querySelector('[data-media="poses"]').click();
+    assert.ok(page.document.querySelector('.viewer-stage > img').src.endsWith('/media/full-resolution.webp'));
+  } finally { page.close(); }
+});

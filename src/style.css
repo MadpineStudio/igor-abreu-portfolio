@@ -52,13 +52,20 @@ button:disabled { opacity: .35; cursor: default; }
 
 .hero { position: relative; min-height: 640px; height: min(960px, 90svh); background: #232420; color: var(--paper); isolation: isolate; overflow: clip; }
 .hero-art { position: absolute; inset: -4% 0 0; z-index: -3; transform: translate3d(0, var(--parallax, 0px), 0); will-change: transform; }
-.hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.hero-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+.hero-image.is-entering { animation: hero-image-in .65s ease both; }
+@keyframes hero-image-in { from { opacity: 0; } to { opacity: 1; } }
 .hero-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, #181b18a3, #171a1722 65%, transparent), linear-gradient(0deg, #191c19b8, transparent 65%, #191c1944); }
 .hero-content { height: 100%; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; padding-block: 160px 72px; }
 .hero h1 { font-size: clamp(36px, 4vw, 68px); line-height: 1.12; letter-spacing: -.055em; font-weight: 500; max-width: min(1100px, 100%); text-wrap: balance; }
-.hero-link { display: inline-flex; gap: 30px; align-items: center; padding-block: 14px; margin-top: 28px; font-size: 18px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; width: 100%; margin-top: 28px; }
+.hero-link { display: inline-flex; gap: 30px; align-items: center; padding-block: 14px; font-size: 18px; }
 .hero-link span { font-size: 26px; transition: transform .35s var(--ease); }
 .hero-link:hover span { transform: translateY(5px); }
+.hero-controls { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+.hero-controls > span { min-width: 55px; text-align: center; font-size: 16px; font-variant-numeric: tabular-nums; }
+.hero-controls button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border-radius: 50%; background: #191d1866; color: var(--paper); font-size: 24px; backdrop-filter: blur(8px); transition: background .25s, transform .25s var(--ease); }
+.hero-controls button:hover { background: var(--orange); color: var(--ink); transform: scale(1.08); }
 
 .work { padding-block: 80px 104px; }
 .section-intro { margin-bottom: 28px; }
@@ -68,7 +75,7 @@ button:disabled { opacity: .35; cursor: default; }
 .filter { font-size: 16px; background: transparent; color: #60675a; padding: 10px 18px; border: 1px solid transparent; border-radius: 30px; transition: background .22s, color .22s; }
 .filter:hover { background: #e4e5db; color: var(--ink); }
 .filter.is-active { background: var(--ink); color: var(--paper); }
-.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 42px 28px; }
 .project-card { min-width: 0; }
 .project-link { display: block; }
 .project-visual { position: relative; overflow: hidden; aspect-ratio: 1.25; background: #d5dacd; border-radius: 4px; transform: perspective(1000px) rotateX(var(--rotate-x, 0deg)) rotateY(var(--rotate-y, 0deg)); transition: transform .45s var(--ease), border-radius .45s var(--ease); }
@@ -121,6 +128,7 @@ dialog[open] { animation: dialog-in .35s var(--ease) both; }
 .media-thumb { position: relative; aspect-ratio: 1.25; overflow: hidden; border-radius: 4px; background: #dce0d3; }
 .media-wide .media-thumb { aspect-ratio: 1.95; }
 .media-square .media-thumb { aspect-ratio: 1; }
+.media-landscape .media-thumb { aspect-ratio: 1.65; }
 .media-portrait .media-thumb { aspect-ratio: .75; }
 .media-thumb > img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
 .media-card:hover .media-thumb > img { transform: scale(1.035); }
@@ -199,7 +207,9 @@ dialog[open] { animation: dialog-in .35s var(--ease) both; }
   .hero-shade { background: linear-gradient(90deg, #1b201b80, #1c211c22), linear-gradient(0deg, #191f19bf, transparent 85%); }
   .hero-content { padding-block: 150px 48px; }
   .hero h1 { font-size: clamp(30px, 6.5vw, 42px); line-height: 1.15; }
-  .hero-link { font-size: 17px; margin-top: 22px; }
+  .hero-actions { margin-top: 22px; gap: 14px; }
+  .hero-link { font-size: 17px; gap: 20px; }
+  .hero-controls { gap: 8px; }
   .work { padding-block: 56px 60px; }
   .section-intro { margin-bottom: 22px; }
   .section-intro h2 { font-size: 36px; }

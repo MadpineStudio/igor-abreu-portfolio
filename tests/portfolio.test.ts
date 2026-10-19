@@ -32,13 +32,18 @@ test('local paths work in a subdirectory and unsafe URL schemes are rejected', (
   assert.equal(escapeHtml('a "rig" <b> & \'motion\''), 'a &quot;rig&quot; &lt;b&gt; &amp; &#39;motion&#39;');
 });
 
-test('the shipped JSON has three valid projects, unique links, and existing local media', async () => {
+test('the shipped JSON has valid projects, unique links, and existing local media', async () => {
   const root = new URL('../public/', import.meta.url);
   const portfolio = JSON.parse(await readFile(new URL('portfolio.json', root), 'utf8'));
-  assert.equal(portfolio.projects.length, 3);
-  assert.equal(new Set(portfolio.projects.map(project => project.id)).size, 3);
+  assert.ok(portfolio.projects.length > 0);
+  assert.equal(new Set(portfolio.projects.map(project => project.id)).size, portfolio.projects.length);
   assert.ok(portfolio.profile.name);
   await access(new URL(portfolio.profile.heroImage, root));
+  for (const image of portfolio.profile.heroImages ?? []) {
+    assert.ok(image.alt);
+    await access(new URL(image.src, root));
+    await access(new URL(image.src, new URL('../dist/', import.meta.url)));
+  }
   const schema = JSON.parse(await readFile(new URL('portfolio.schema.json', root), 'utf8'));
   assert.ok(schema.properties.profile.properties.name);
   for (const project of portfolio.projects) {
