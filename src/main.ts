@@ -33,7 +33,7 @@ function stats(project: Project) {
 function renderHome() {
   const { profile, projects } = data;
   const categories = [...new Set(projects.map(project => project.category))];
-  document.title = `${profile.name} — Rigging & Animation`;
+  document.title = `${profile.name} — ${profile.role}`;
   app.innerHTML = `
     <header class="site-header">
       <a class="wordmark" href="#home" aria-label="${e(profile.name)}, home">${e(profile.name)}</a>
@@ -136,7 +136,7 @@ function syncRoute() {
     pauseVideos(mediaDialog);
     mediaDialog.close(); projectDialog.close(); activeProject = undefined;
     document.documentElement.classList.remove('modal-open');
-    document.title = `${data.profile.name} — Rigging & Animation`;
+    document.title = `${data.profile.name} — ${data.profile.role}`;
     lastTrigger?.focus({ preventScroll: true });
     return;
   }
