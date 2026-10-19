@@ -7,8 +7,8 @@
       "Rigging &",
       "Animation"
     ],
-    "heroImage": "media/posters/2026-04-25-00-40-09.webp",
-    "heroAlt": "A character in the forest environment of The Flower Castle.",
+    "heroImage": "media/thumb.png",
+    "heroAlt": "A stylized character in a T-pose beneath a blue sky and moon.",
     "email": "",
     "socials": []
   },
@@ -39,7 +39,7 @@
           "aspect": "wide"
         },
         {
-          "id": "floresta",
+          "id": "forest",
           "type": "image",
           "title": "Forest",
           "caption": "Still from the forest development capture.",
@@ -49,7 +49,7 @@
           "aspect": "square"
         },
         {
-          "id": "movimentacao",
+          "id": "locomotion",
           "type": "video",
           "title": "Locomotion",
           "caption": "Character movement in a playable environment.",
@@ -59,7 +59,7 @@
           "aspect": "square"
         },
         {
-          "id": "personagem-no-cenario",
+          "id": "character-in-scene",
           "type": "video",
           "title": "Character in scene",
           "caption": "Character framing, environment and lighting.",
@@ -69,7 +69,7 @@
           "aspect": "wide"
         },
         {
-          "id": "animacao-na-engine",
+          "id": "in-engine-animation",
           "type": "video",
           "title": "In-engine animation",
           "caption": "Animation and locomotion test in Unity.",
@@ -79,7 +79,7 @@
           "aspect": "wide"
         },
         {
-          "id": "exploracao",
+          "id": "environment",
           "type": "image",
           "title": "Environment",
           "caption": "Still from The Flower Castle gameplay capture.",
@@ -91,7 +91,7 @@
       ]
     },
     {
-      "id": "rigs-e-personagens",
+      "id": "character-rigs",
       "number": "02",
       "title": "Character Rigs",
       "subtitle": "Facial and creature animation",
@@ -107,7 +107,7 @@
       "credits": "",
       "media": [
         {
-          "id": "expressoes",
+          "id": "facial-expressions",
           "type": "video",
           "title": "Facial expressions",
           "caption": "Facial expression test on a stylized character.",
@@ -117,7 +117,7 @@
           "aspect": "wide"
         },
         {
-          "id": "olhos",
+          "id": "eye-movement",
           "type": "video",
           "title": "Eye movement",
           "caption": "In-engine facial animation test.",
@@ -127,7 +127,7 @@
           "aspect": "square"
         },
         {
-          "id": "estudo-facial",
+          "id": "facial-study",
           "type": "image",
           "title": "Facial study",
           "caption": "Still from the facial expression test.",
@@ -137,7 +137,7 @@
           "aspect": "square"
         },
         {
-          "id": "criatura",
+          "id": "creature-rig",
           "type": "video",
           "title": "Creature rig",
           "caption": "Winged creature animation in Blender.",
@@ -147,7 +147,7 @@
           "aspect": "wide"
         },
         {
-          "id": "quadrupede",
+          "id": "quadruped-animation",
           "type": "video",
           "title": "Quadruped animation",
           "caption": "Animated fox test in Unity.",
@@ -157,7 +157,7 @@
           "aspect": "wide"
         },
         {
-          "id": "olhos-estilizados",
+          "id": "stylized-eyes",
           "type": "video",
           "title": "Stylized eyes",
           "caption": "Eye and eyelid experiment.",
@@ -167,7 +167,7 @@
           "aspect": "square"
         },
         {
-          "id": "processo-visual",
+          "id": "visual-development",
           "type": "video",
           "title": "Visual development",
           "caption": "Character drawings and shape studies.",
@@ -177,7 +177,7 @@
           "aspect": "square"
         },
         {
-          "id": "rig-em-detalhe",
+          "id": "rig-detail",
           "type": "image",
           "title": "Rig detail",
           "caption": "Still from the creature animation study in Blender.",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "id": "experimentos-tech-art",
+      "id": "tech-art-studies",
       "number": "03",
       "title": "Tech Art Studies",
       "subtitle": "Materials and real-time effects",
@@ -204,7 +204,7 @@
       "credits": "",
       "media": [
         {
-          "id": "nuvens",
+          "id": "cloud-effects",
           "type": "video",
           "title": "Cloud effects",
           "caption": "Real-time cloud effects in Unity.",
@@ -214,7 +214,7 @@
           "aspect": "wide"
         },
         {
-          "id": "efeito-em-cena",
+          "id": "cloud-study",
           "type": "image",
           "title": "Cloud study",
           "caption": "Still from the in-engine cloud experiment.",
@@ -224,7 +224,7 @@
           "aspect": "square"
         },
         {
-          "id": "materiais",
+          "id": "materials",
           "type": "video",
           "title": "Materials",
           "caption": "Environment material and render mode inspection.",
@@ -234,7 +234,7 @@
           "aspect": "square"
         },
         {
-          "id": "cena",
+          "id": "scene-breakdown",
           "type": "video",
           "title": "Scene breakdown",
           "caption": "Environment and scene inspection in Unity.",
@@ -244,7 +244,7 @@
           "aspect": "wide"
         },
         {
-          "id": "estrutura",
+          "id": "environment-structure",
           "type": "image",
           "title": "Environment structure",
           "caption": "Still from the scene inspection capture.",

@@ -22,7 +22,7 @@ Edit `public/portfolio.json`. The accompanying JSON schema provides editor sugge
 - `projects[].media`: videos and images in display order. Keep IDs stable to preserve shared links.
 - Media paths are relative to `public/`, with no leading slash.
 
-To replace the hero, save your cover in `public/media/` and set `profile.heroImage` to its path, for example `media/thumb.webp`. Update `profile.heroAlt` to describe it.
+The hero uses `public/media/thumb.png`. To change it, replace that file or update `profile.heroImage` and `profile.heroAlt`. If the filename changes, update the social preview image in `index.html` too.
 
 Example local video:
 
