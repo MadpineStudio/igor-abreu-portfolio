@@ -1,0 +1,24 @@
+{
+  "name": "igor-abreu-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/copy-public.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "tsc --noEmit",
+    "media:optimize": "node scripts/optimize-media.mjs",
+    "pretest": "npm run build",
+    "test": "node --experimental-strip-types --test tests/*.test.*"
+  },
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.2.8",
+    "jsdom": "^29.1.1",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "$schema": "./portfolio.schema.json",
+  "profile": {
+    "name": "Igor Abreu",
+    "role": "Technical Artist",
+    "headline": [
+      "Rigging &",
+      "Animation"
+    ],
+    "heroImage": "media/placeholders/hero.webp",
+    "heroAlt": "Articulated robot study.",
+    "email": "",
+    "socials": []
+  },
+  "projects": [
+    {
+      "id": "atlas",
+      "number": "01",
+      "title": "Atlas",
+      "subtitle": "Character animation in Unity",
+      "category": "Rigging",
+      "year": "2026",
+      "cover": "media/placeholders/atlas.svg",
+      "coverAlt": "Atlas project preview.",
+      "description": "Example project.",
+      "tools": [
+        "Maya",
+        "Python"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "overview",
+          "type": "video",
+          "title": "Rig overview",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/atlas.svg",
+          "alt": "Project media preview.",
+          "aspect": "wide"
+        },
+        {
+          "id": "poses",
+          "type": "image",
+          "title": "Pose study",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/atlas-detail.svg",
+          "alt": "Project media preview.",
+          "aspect": "square"
+        },
+        {
+          "id": "deformation",
+          "type": "video",
+          "title": "Deformation test",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/atlas.svg",
+          "alt": "Project media preview.",
+          "aspect": "square"
+        },
+        {
+          "id": "controls",
+          "type": "image",
+          "title": "Controls",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/atlas-detail.svg",
+          "alt": "Project media preview.",
+          "aspect": "wide"
+        }
+      ]
+    },
+    {
+      "id": "kinetic",
+      "number": "02",
+      "title": "Kinetic",
+      "subtitle": "Facial and creature animation",
+      "category": "Animation",
+      "year": "2026",
+      "cover": "media/placeholders/kinetic.svg",
+      "coverAlt": "Kinetic project preview.",
+      "description": "Example project.",
+      "tools": [
+        "Blender"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "final",
+          "type": "video",
+          "title": "Final animation",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/kinetic.svg",
+          "alt": "Project media preview.",
+          "aspect": "wide"
+        },
+        {
+          "id": "keyframes",
+          "type": "image",
+          "title": "Keyframes",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/kinetic-detail.svg",
+          "alt": "Project media preview.",
+          "aspect": "square"
+        },
+        {
+          "id": "blocking",
+          "type": "video",
+          "title": "Timing study",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/kinetic.svg",
+          "alt": "Project media preview.",
+          "aspect": "square"
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "number": "03",
+      "title": "Orbit",
+      "subtitle": "Materials and real-time effects",
+      "category": "Technical Art",
+      "year": "2026",
+      "cover": "media/placeholders/orbit.svg",
+      "coverAlt": "Orbit project preview.",
+      "description": "Example project.",
+      "tools": [
+        "Houdini",
+        "Python"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "system",
+          "type": "video",
+          "title": "Effect overview",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/orbit.svg",
+          "alt": "Project media preview.",
+          "aspect": "wide"
+        },
+        {
+          "id": "details",
+          "type": "image",
+          "title": "Material detail",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/orbit-detail.svg",
+          "alt": "Project media preview.",
+          "aspect": "square"
+        },
+        {
+          "id": "breakdown",
+          "type": "video",
+          "title": "Scene study",
+          "caption": "Study preview.",
+          "src": "",
+          "poster": "media/placeholders/orbit.svg",
+          "alt": "Project media preview.",
+          "aspect": "square"
+        }
+      ]
+    }
+  ]
+}

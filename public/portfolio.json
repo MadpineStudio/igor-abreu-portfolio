@@ -1,0 +1,259 @@
+{
+  "$schema": "./portfolio.schema.json",
+  "profile": {
+    "name": "Igor Abreu",
+    "role": "Technical Artist",
+    "headline": [
+      "Rigging &",
+      "Animation"
+    ],
+    "heroImage": "media/posters/2026-04-25-00-40-09.webp",
+    "heroAlt": "A character in the forest environment of The Flower Castle.",
+    "email": "",
+    "socials": []
+  },
+  "projects": [
+    {
+      "id": "the-flower-castle",
+      "number": "01",
+      "title": "The Flower Castle",
+      "subtitle": "Character animation in Unity",
+      "category": "Animation",
+      "year": "2026",
+      "cover": "media/posters/2026-04-25-00-40-09.webp",
+      "coverAlt": "The Flower Castle character in a stylized forest.",
+      "description": "Gameplay and animation tests from The Flower Castle. Character locomotion, environment exploration and in-engine animation.",
+      "tools": [
+        "Unity"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "gameplay",
+          "type": "video",
+          "title": "Gameplay",
+          "caption": "Character movement and exploration.",
+          "src": "media/optimized/testing-game-sem-audio.mp4",
+          "poster": "media/posters/testing-game-sem-audio.webp",
+          "alt": "Character movement and exploration.",
+          "aspect": "wide"
+        },
+        {
+          "id": "floresta",
+          "type": "image",
+          "title": "Forest",
+          "caption": "Still from the forest development capture.",
+          "src": "media/posters/2026-04-25-00-40-09.webp",
+          "poster": "media/posters/2026-04-25-00-40-09.webp",
+          "alt": "Still from the forest development capture.",
+          "aspect": "square"
+        },
+        {
+          "id": "movimentacao",
+          "type": "video",
+          "title": "Locomotion",
+          "caption": "Character movement in a playable environment.",
+          "src": "media/optimized/2026-03-29-21-22-39.mp4",
+          "poster": "media/posters/2026-03-29-21-22-39.webp",
+          "alt": "Character movement in a playable environment.",
+          "aspect": "square"
+        },
+        {
+          "id": "personagem-no-cenario",
+          "type": "video",
+          "title": "Character in scene",
+          "caption": "Character framing, environment and lighting.",
+          "src": "media/optimized/2026-04-25-00-40-09.mp4",
+          "poster": "media/posters/2026-04-25-00-40-09.webp",
+          "alt": "Character framing, environment and lighting.",
+          "aspect": "wide"
+        },
+        {
+          "id": "animacao-na-engine",
+          "type": "video",
+          "title": "In-engine animation",
+          "caption": "Animation and locomotion test in Unity.",
+          "src": "media/optimized/2026-10-07-01-36-12-comp.mp4",
+          "poster": "media/posters/2026-10-07-01-36-12-comp.webp",
+          "alt": "Animation and locomotion test in Unity.",
+          "aspect": "wide"
+        },
+        {
+          "id": "exploracao",
+          "type": "image",
+          "title": "Environment",
+          "caption": "Still from The Flower Castle gameplay capture.",
+          "src": "media/posters/testing-game-sem-audio.webp",
+          "poster": "media/posters/testing-game-sem-audio.webp",
+          "alt": "Still from The Flower Castle gameplay capture.",
+          "aspect": "square"
+        }
+      ]
+    },
+    {
+      "id": "rigs-e-personagens",
+      "number": "02",
+      "title": "Character Rigs",
+      "subtitle": "Facial and creature animation",
+      "category": "Rigging",
+      "year": "2026",
+      "cover": "media/posters/2026-04-04-17-49-28.webp",
+      "coverAlt": "A stylized character during a facial expression test.",
+      "description": "Facial expressions, creature rigs and quadruped animation. Tests in Blender and Unity.",
+      "tools": [
+        "Blender",
+        "Unity"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "expressoes",
+          "type": "video",
+          "title": "Facial expressions",
+          "caption": "Facial expression test on a stylized character.",
+          "src": "media/optimized/2026-04-04-17-49-28.mp4",
+          "poster": "media/posters/2026-04-04-17-49-28.webp",
+          "alt": "Facial expression test on a stylized character.",
+          "aspect": "wide"
+        },
+        {
+          "id": "olhos",
+          "type": "video",
+          "title": "Eye movement",
+          "caption": "In-engine facial animation test.",
+          "src": "media/optimized/2026-04-04-17-46-02.mp4",
+          "poster": "media/posters/2026-04-04-17-46-02.webp",
+          "alt": "In-engine facial animation test.",
+          "aspect": "square"
+        },
+        {
+          "id": "estudo-facial",
+          "type": "image",
+          "title": "Facial study",
+          "caption": "Still from the facial expression test.",
+          "src": "media/posters/2026-04-04-17-49-28.webp",
+          "poster": "media/posters/2026-04-04-17-49-28.webp",
+          "alt": "Still from the facial expression test.",
+          "aspect": "square"
+        },
+        {
+          "id": "criatura",
+          "type": "video",
+          "title": "Creature rig",
+          "caption": "Winged creature animation in Blender.",
+          "src": "media/optimized/2026-04-16-02-41-42.mp4",
+          "poster": "media/posters/2026-04-16-02-41-42.webp",
+          "alt": "Winged creature animation in Blender.",
+          "aspect": "wide"
+        },
+        {
+          "id": "quadrupede",
+          "type": "video",
+          "title": "Quadruped animation",
+          "caption": "Animated fox test in Unity.",
+          "src": "media/optimized/2026-07-24-15-19-08.mp4",
+          "poster": "media/posters/2026-07-24-15-19-08.webp",
+          "alt": "Animated fox test in Unity.",
+          "aspect": "wide"
+        },
+        {
+          "id": "olhos-estilizados",
+          "type": "video",
+          "title": "Stylized eyes",
+          "caption": "Eye and eyelid experiment.",
+          "src": "media/optimized/2026-07-03-17-51-16.mp4",
+          "poster": "media/posters/2026-07-03-17-51-16.webp",
+          "alt": "Eye and eyelid experiment.",
+          "aspect": "square"
+        },
+        {
+          "id": "processo-visual",
+          "type": "video",
+          "title": "Visual development",
+          "caption": "Character drawings and shape studies.",
+          "src": "media/optimized/2026-10-14-23-08-58.mp4",
+          "poster": "media/posters/2026-10-14-23-08-58.webp",
+          "alt": "Character drawings and shape studies.",
+          "aspect": "square"
+        },
+        {
+          "id": "rig-em-detalhe",
+          "type": "image",
+          "title": "Rig detail",
+          "caption": "Still from the creature animation study in Blender.",
+          "src": "media/posters/2026-04-16-02-41-42.webp",
+          "poster": "media/posters/2026-04-16-02-41-42.webp",
+          "alt": "Still from the creature animation study in Blender.",
+          "aspect": "square"
+        }
+      ]
+    },
+    {
+      "id": "experimentos-tech-art",
+      "number": "03",
+      "title": "Tech Art Studies",
+      "subtitle": "Materials and real-time effects",
+      "category": "Technical Art",
+      "year": "2026",
+      "cover": "media/posters/2026-09-13-04-28-21.webp",
+      "coverAlt": "Real-time cloud effects in a Unity scene.",
+      "description": "Material, environment and cloud effect experiments in Unity.",
+      "tools": [
+        "Unity"
+      ],
+      "credits": "",
+      "media": [
+        {
+          "id": "nuvens",
+          "type": "video",
+          "title": "Cloud effects",
+          "caption": "Real-time cloud effects in Unity.",
+          "src": "media/optimized/2026-09-13-04-28-21.mp4",
+          "poster": "media/posters/2026-09-13-04-28-21.webp",
+          "alt": "Real-time cloud effects in Unity.",
+          "aspect": "wide"
+        },
+        {
+          "id": "efeito-em-cena",
+          "type": "image",
+          "title": "Cloud study",
+          "caption": "Still from the in-engine cloud experiment.",
+          "src": "media/posters/2026-09-13-04-28-21.webp",
+          "poster": "media/posters/2026-09-13-04-28-21.webp",
+          "alt": "Still from the in-engine cloud experiment.",
+          "aspect": "square"
+        },
+        {
+          "id": "materiais",
+          "type": "video",
+          "title": "Materials",
+          "caption": "Environment material and render mode inspection.",
+          "src": "media/optimized/2026-07-02-22-44-45.mp4",
+          "poster": "media/posters/2026-07-02-22-44-45.webp",
+          "alt": "Environment material and render mode inspection.",
+          "aspect": "square"
+        },
+        {
+          "id": "cena",
+          "type": "video",
+          "title": "Scene breakdown",
+          "caption": "Environment and scene inspection in Unity.",
+          "src": "media/optimized/2026-04-29-05-46-47.mp4",
+          "poster": "media/posters/2026-04-29-05-46-47.webp",
+          "alt": "Environment and scene inspection in Unity.",
+          "aspect": "wide"
+        },
+        {
+          "id": "estrutura",
+          "type": "image",
+          "title": "Environment structure",
+          "caption": "Still from the scene inspection capture.",
+          "src": "media/posters/2026-04-29-05-46-47.webp",
+          "poster": "media/posters/2026-04-29-05-46-47.webp",
+          "alt": "Still from the scene inspection capture.",
+          "aspect": "square"
+        }
+      ]
+    }
+  ]
+}

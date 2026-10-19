@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 950" fill="none"><defs>
+<radialGradient id="bg"><stop stop-color="#e5e7db"/><stop offset="1" stop-color="#a9b29e"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#f2f0e9"/><stop offset=".3" stop-color="#aaa9a1"/><stop offset=".48" stop-color="#eeeae1"/><stop offset=".6" stop-color="#696b65"/><stop offset="1" stop-color="#c6c7be"/></linearGradient>
+<linearGradient id="dark" x2="1" y2=".4"><stop stop-color="#353b36"/><stop offset=".5" stop-color="#798078"/><stop offset="1" stop-color="#222823"/></linearGradient>
+<linearGradient id="orange" x1=".1" x2="1" y2=".5"><stop stop-color="#fca16c"/><stop offset=".4" stop-color="#e77b43"/><stop offset="1" stop-color="#a64120"/></linearGradient>
+<radialGradient id="ball" cx=".35" cy=".25"><stop stop-color="#f7f8ef"/><stop offset=".35" stop-color="#b9beb1"/><stop offset=".65" stop-color="#727c6c"/><stop offset="1" stop-color="#252e26"/></radialGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="25"/></filter>
+</defs><path fill="url(#bg)" d="M0 0h1200v950H0z"/><ellipse cx="620" cy="800" rx="260" ry="32" fill="#172017" opacity=".2" filter="url(#shadow)"/>
+<g transform="translate(0 0)"><g transform="rotate(-28 600 470)"><ellipse cx="600" cy="470" rx="320" ry="129" stroke="#5c6659" stroke-width="18"/><ellipse cx="600" cy="470" rx="320" ry="129" stroke="url(#metal)" stroke-width="11"/></g>
+<g transform="rotate(36 600 470)"><ellipse cx="600" cy="470" rx="282" ry="152" stroke="#404b40" stroke-width="29"/><ellipse cx="600" cy="470" rx="282" ry="152" stroke="url(#metal)" stroke-width="23"/></g>
+<g transform="rotate(82 600 470)"><ellipse cx="600" cy="470" rx="310" ry="128" stroke="#465143" stroke-width="18"/><ellipse cx="600" cy="470" rx="310" ry="128" stroke="url(#metal)" stroke-width="13"/></g>
+<circle cx="600" cy="470" r="144" fill="url(#ball)"/>
+<g transform="rotate(-28 600 470)"><path d="M280 470a320 129 0 00640 0" stroke="url(#metal)" stroke-width="13"/></g>
+<g transform="rotate(36 600 470)"><path d="M318 470a282 152 0 00564 0" stroke="url(#metal)" stroke-width="23"/></g>
+<g transform="rotate(82 600 470)"><path d="M290 470a310 128 0 00620 0" stroke="url(#metal)" stroke-width="13"/></g>
+<circle cx="854" cy="318" r="27" fill="url(#orange)"/><circle cx="393" cy="648" r="18" fill="url(#orange)"/></g></svg>

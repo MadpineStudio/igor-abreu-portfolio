@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+*.local
+*.log
+artifacts/
+# Working videos added locally while the portfolio is being prepared.
+public/media/final/
+*.partial.mp4
+.DS_Store
+Thumbs.db
+
+# Previous hosting platform metadata is not part of this repository.
+.openai/

@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Portfolio content",
+  "type": "object",
+  "required": [
+    "profile",
+    "projects"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "object",
+      "required": [
+        "name",
+        "role",
+        "headline",
+        "heroImage",
+        "heroAlt",
+        "email",
+        "socials"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string"
+        },
+        "headline": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "maxItems": 3
+        },
+        "heroImage": {
+          "type": "string",
+          "description": "Path relative to public/, for example media/thumb.webp."
+        },
+        "heroAlt": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "description": "Leave empty to hide the contact link."
+        },
+        "socials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "url"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "number",
+          "title",
+          "subtitle",
+          "category",
+          "year",
+          "cover",
+          "coverAlt",
+          "description",
+          "tools",
+          "credits",
+          "media"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Unique, permanent link identifier."
+          },
+          "number": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "cover": {
+            "type": "string"
+          },
+          "coverAlt": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "credits": {
+            "type": "string"
+          },
+          "media": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/media"
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "media": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "title",
+        "caption",
+        "src",
+        "poster",
+        "alt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "type": {
+          "enum": [
+            "image",
+            "video"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "caption": {
+          "type": "string"
+        },
+        "src": {
+          "type": "string",
+          "description": "Path relative to public/. Leave empty for a placeholder."
+        },
+        "poster": {
+          "type": "string",
+          "description": "Video poster or placeholder image."
+        },
+        "alt": {
+          "type": "string"
+        },
+        "aspect": {
+          "enum": [
+            "wide",
+            "square",
+            "portrait"
+          ]
+        },
+        "tracks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "src",
+              "label",
+              "language"
+            ],
+            "properties": {
+              "src": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "language": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
