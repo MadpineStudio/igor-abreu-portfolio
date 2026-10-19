@@ -2,7 +2,7 @@
   "$schema": "./portfolio.schema.json",
   "profile": {
     "name": "Igor Abreu",
-    "role": "Game Developer | Artist | Rigging and Animation",
+    "role": "Game Developer | Rigging",
     "heroImage": "media/thumb.png",
     "heroAlt": "A stylized character in a T-pose beneath a blue sky and moon.",
     "email": "",
